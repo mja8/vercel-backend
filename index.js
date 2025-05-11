@@ -39,3 +39,8 @@ app.use("/api/v1/progress", courseProgressRoute); // courseProgressRoute ka Api
 app.listen(PORT, () => {
     console.log(`Server listening at port ${PORT}`);
 });
+
+app.get('/', (req, res) => {
+  res.send('API is running!');
+});
+
